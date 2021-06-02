@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">MidtermOne</string>
+    <string name="todo">TODO</string>
+    <string name="bookheader">bookHeader</string>
+    <string name="classic_vintage_books">Classic.Vintage.Books</string>
+    <string name="anne">Anne</string>
+    <string name="blackbeauty">blackBeauty</string>
+    <string name="hatchet">hatchet</string>
+    <string name="lionwitchwardrobe">lionwitchwardrobe</string>
+    <string name="littlewomen">littlewomen</string>
+    <string name="marypoppins">marypoppins</string>
+    <string name="wizardofoz">wizardofoz</string>
+    <string name="peterpan">peterpan</string>
+    <string name="pippilongstalking">pippilongstalking</string>
+    <string name="redferngrows">redferngrows</string>
+    <string name="secretgarden">secretgarden</string>
+    <string name="wildheartcannotbebroken">wildheartcannotbebroken</string>
+    <string name="imagine_dream_let_it_be">Imagine. Dream. Let it Be.</string>
+    <string name="title_activity_book2">book2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="bbimage">bbimage</string>
+    <string name="buy">Buy</string>
 </resources>
