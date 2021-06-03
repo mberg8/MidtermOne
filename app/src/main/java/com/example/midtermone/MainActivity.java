@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent i;
-
+        Log.d("CIS 3334", "In onClick");
         switch (v.getId()) {
             case R.id.cardView1 :
                 i = new Intent(this,book1.class);

@@ -79,7 +79,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/anne"
                     android:focusable="true"
                     android:src="@drawable/anne" />
@@ -103,7 +103,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/blackbeauty"
                     android:focusable="true"
                     android:src="@drawable/bb" />
