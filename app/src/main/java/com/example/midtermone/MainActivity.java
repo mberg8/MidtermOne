@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12;
 
-
+    FirebaseDatabase database;
+    DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card11.setOnClickListener(this);
         card12.setOnClickListener(this);
 
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("bookFirebaseData");
 
     }
 
