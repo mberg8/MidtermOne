@@ -127,7 +127,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/hatchet"
                     android:focusable="true"
                     android:src="@drawable/hatchet" />
@@ -151,7 +151,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/lionwitchwardrobe"
                     android:focusable="true"
                     android:src="@drawable/lion" />
@@ -175,7 +175,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/littlewomen"
                     android:focusable="true"
                     android:src="@drawable/littlew" />
@@ -199,7 +199,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/marypoppins"
                     android:focusable="true"
                     android:src="@drawable/maryp" />
@@ -223,7 +223,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/wizardofoz"
                     android:focusable="true"
                     android:src="@drawable/oz" />
@@ -247,7 +247,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/peterpan"
                     android:focusable="true"
                     android:src="@drawable/peter" />
@@ -271,7 +271,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/pippilongstalking"
                     android:focusable="true"
                     android:src="@drawable/pippi" />
@@ -295,7 +295,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/redferngrows"
                     android:focusable="true"
                     android:src="@drawable/redf" />
@@ -319,7 +319,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/secretgarden"
                     android:focusable="true"
                     android:src="@drawable/secretg" />
@@ -343,7 +343,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="true"
+                    android:clickable="false"
                     android:contentDescription="@string/wildheartcannotbebroken"
                     android:focusable="true"
                     android:src="@drawable/wildh" />
