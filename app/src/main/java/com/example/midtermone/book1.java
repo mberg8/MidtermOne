@@ -1,7 +1,6 @@
 package com.example.midtermone;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,7 +36,7 @@ public class book1 extends AppCompatActivity implements View.OnClickListener {
                 startActivity(i);
                 break;
             case R.id.button1_1:
-                i = new Intent(this, orderbook.class);
+                i = new Intent(this,orderBook.class);
                 startActivity(i);
                 break;
 

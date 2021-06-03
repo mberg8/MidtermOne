@@ -36,7 +36,7 @@ public class book9 extends AppCompatActivity implements View.OnClickListener {
                 startActivity(i);
                 break;
             case R.id.button9_1:
-                i = new Intent(this, orderbook.class);
+                i = new Intent(this, orderBook.class);
                 startActivity(i);
                 break;
 

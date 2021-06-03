@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#41cee0"
-    tools:context=".orderbook">
+    tools:context=".orderBookFirebaseData">
 
     <LinearLayout
         android:id="@+id/linearlayout"
@@ -56,7 +56,7 @@
         android:id="@+id/buttonOrder"
         android:layout_width="412dp"
         android:layout_height="61dp"
-        android:text="Confirm Order"
+        android:text="@string/confirm_order"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
