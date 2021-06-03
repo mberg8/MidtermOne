@@ -3,18 +3,26 @@ package com.example.midtermone;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         card1=(CardView) findViewById(R.id.cardView1);
         card2=(CardView) findViewById(R.id.cardView2);
@@ -41,7 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card10.setOnClickListener(this);
         card11.setOnClickListener(this);
         card12.setOnClickListener(this);
+
+
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -107,5 +119,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
         }
+
     }
 }
