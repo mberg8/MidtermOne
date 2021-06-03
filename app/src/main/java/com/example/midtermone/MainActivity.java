@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 
 
@@ -18,25 +21,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        card1=(CardView) findViewById(R.id.cardView1);
-        card2=(CardView) findViewById(R.id.cardView2);
-        card3=(CardView) findViewById(R.id.cardView3);
-        card4=(CardView) findViewById(R.id.cardView4);
-        card5=(CardView) findViewById(R.id.cardView5);
-        card6=(CardView) findViewById(R.id.cardView6);
-        card7=(CardView) findViewById(R.id.cardView7);
-        card8=(CardView) findViewById(R.id.cardView8);
-        card9=(CardView) findViewById(R.id.cardView9);
-        card10=(CardView) findViewById(R.id.cardView10);
-        card11=(CardView) findViewById(R.id.cardView11);
-        card12=(CardView) findViewById(R.id.cardView12);
+        card1 = (CardView) findViewById(R.id.cardView1);
+        card2 = (CardView) findViewById(R.id.cardView2);
+        card3 = (CardView) findViewById(R.id.cardView3);
+        card4 = (CardView) findViewById(R.id.cardView4);
+        card5 = (CardView) findViewById(R.id.cardView5);
+        card6 = (CardView) findViewById(R.id.cardView6);
+        card7 = (CardView) findViewById(R.id.cardView7);
+        card8 = (CardView) findViewById(R.id.cardView8);
+        card9 = (CardView) findViewById(R.id.cardView9);
+        card10 = (CardView) findViewById(R.id.cardView10);
+        card11 = (CardView) findViewById(R.id.cardView11);
+        card12 = (CardView) findViewById(R.id.cardView12);
 
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
 
 
 
