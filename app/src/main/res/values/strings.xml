@@ -25,4 +25,7 @@
     <string name="bbimage">bbimage</string>
     <string name="buy">Buy</string>
     <string name="click_to_order">Click. to. Order</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="order">Order</string>
+
 </resources>
