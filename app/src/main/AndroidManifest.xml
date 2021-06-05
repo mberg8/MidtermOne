@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MidtermOne">
+        <activity android:name=".orderbooks"></activity>
         <activity android:name=".book12" />
         <activity android:name=".book11" />
         <activity android:name=".book10" />
@@ -24,8 +25,10 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

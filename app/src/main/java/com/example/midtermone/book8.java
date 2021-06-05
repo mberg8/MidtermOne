@@ -18,8 +18,8 @@ public class book8 extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book8);
 
-        buttonMenu = findViewById(R.id.button8);
-        buttonOrder = findViewById(R.id.button8_1);
+        buttonMenu = findViewById(R.id.button8_1);
+        buttonOrder = findViewById(R.id.button8);
 
         buttonMenu.setOnClickListener(this);
         buttonOrder.setOnClickListener(this);
@@ -31,12 +31,12 @@ public class book8 extends AppCompatActivity implements View.OnClickListener {
         Intent i;
         Log.d("CIS 3334", "In onClick");
         switch (v.getId()) {
-            case R.id.button8:
+            case R.id.button8_1:
                 i = new Intent(this, MainActivity.class);
                 startActivity(i);
                 break;
-            case R.id.button8_1:
-                i = new Intent(this, orderBook.class);
+            case R.id.button8:
+                i = new Intent(this, orderbooks.class);
                 startActivity(i);
                 break;
 
