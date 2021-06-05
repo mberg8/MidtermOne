@@ -36,7 +36,7 @@
                     android:src="@drawable/duckbook" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/checkBox1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -353,10 +353,10 @@
         </GridLayout>
 
         <Button
-            android:id="@+id/buttonGoogleLogin"
+            android:id="@+id/buttonOrderPage"
             android:layout_width="match_parent"
             android:layout_height="59dp"
-            android:text="@string/google_login" />
+            android:text="@string/go_to_order_page" />
 
 
     </LinearLayout>

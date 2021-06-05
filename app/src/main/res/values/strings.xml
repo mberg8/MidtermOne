@@ -30,6 +30,7 @@
     <string name="confirm_order">Confirm Order</string>
     <string name="anneorder">anneOrder</string>
     <string name="google_login">Google Login</string>
+    <string name="go_to_order_page">Go to Order Page</string>
 
 
 </resources>
