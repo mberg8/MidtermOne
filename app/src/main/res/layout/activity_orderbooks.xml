@@ -61,17 +61,30 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardviewOrder"
                     android:layout_width="347dp"
-                    android:layout_height="640dp"
+                    android:layout_height="81dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="25sp"
                     android:layout_marginBottom="25sp">
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerviewOrderAdd"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:itemCount="12"
-                        tools:listitem="@layout/recycler_view_item" />
+                    <ImageView
+                        android:id="@+id/imageViewOrder2"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:contentDescription="@string/anneorder"
+                        android:padding="5sp"
+                        android:src="@drawable/anne"
+                        tools:srcCompat="@drawable/anne" />
+
+                    <CheckBox
+                        android:id="@+id/textView3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right|center_horizontal"
+                        android:paddingTop="0sp"
+                        android:text="Add to Order"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
                 </androidx.cardview.widget.CardView>
 
                 <Button
