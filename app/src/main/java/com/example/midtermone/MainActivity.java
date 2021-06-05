@@ -2,16 +2,23 @@ package com.example.midtermone;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import androidx.annotation.NonNull;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 
@@ -19,13 +26,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12;
 
-    FirebaseDatabase database;
-    DatabaseReference myRef;
+    private FirebaseAuth mAuth;
+    private TextView textViewStatus;
+    private Button buttonGoogleLogin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        buttonGoogleLogin = (Button) findViewById(R.id.buttonGoogleLogin);
+
 
         card1 = (CardView) findViewById(R.id.cardView1);
         card2 = (CardView) findViewById(R.id.cardView2);
@@ -40,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card11 = (CardView) findViewById(R.id.cardView11);
         card12 = (CardView) findViewById(R.id.cardView12);
 
+        buttonGoogleLogin.setOnClickListener(this);
+
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
         card3.setOnClickListener(this);
@@ -53,16 +69,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card11.setOnClickListener(this);
         card12.setOnClickListener(this);
 
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("bookFirebaseData");
 
     }
 
 
-
-
     @Override
     public void onClick(View v) {
+        super.onStart();
+        Log.d("CIS3334", "Google login ");
+        googleSignIn();
         Intent i;
         Log.d("CIS 3334", "In onClick");
         switch (v.getId()) {
@@ -71,9 +86,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.cardView2 :
-                 i = new Intent(this,book2.class);
-                 startActivity(i);
-                 break;
+                i = new Intent(this,book2.class);
+                startActivity(i);
+                break;
 
             case R.id.cardView3:
                 i= new Intent(this,book3.class);
@@ -126,5 +141,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
+
     }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            currentUser.reload();
+            Log.d("CIS3334", "onAuthStateChange : signed_in :" + currentUser.getUid());
+            Toast.makeText(MainActivity.this, "User signed in", Toast.LENGTH_LONG).show();
+            textViewStatus.setText("Signed In");
+        } else {
+            Log.d("CIS3334", "onAuthStateChange : signed_out :" + currentUser.getUid());
+            Toast.makeText(MainActivity.this, "User signed out", Toast.LENGTH_LONG).show();
+            textViewStatus.setText("Signed Out");
+        }
+    }
+
+
+    private void googleSignIn() {
+    }
+
 }
+
+

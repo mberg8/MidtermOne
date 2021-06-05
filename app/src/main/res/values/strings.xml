@@ -29,6 +29,7 @@
     <string name="order">Order</string>
     <string name="confirm_order">Confirm Order</string>
     <string name="anneorder">anneOrder</string>
+    <string name="google_login">Google Login</string>
 
 
 </resources>

@@ -425,7 +425,7 @@
                         android:layout_gravity="center|center_horizontal|end"
                         android:buttonTint="#FFFFFF"
                         android:paddingTop="0sp"
-                        android:text="Add to Order"
+                        android:text="Add to Order         $29"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="18sp" />
